@@ -1,6 +1,7 @@
-power = #power by little-file
-github = #github: https://github.com/little-file/
-version = #II.v
+#power by little-file
+#github: https://github.com/little-file/
+#II.v
+
 import discord,random
 
 intents = discord.Intents.default()
@@ -53,6 +54,13 @@ async def on_message(message):
          await message.channel.send("""        I. https://www.chess.com/analysis/game/computer/47503297?tab=analysis
         II. https://www.chess.com/analysis/game/live/71852224971?tab=review""")
             
-    if message.content.startswith("author"):
+
+    if message.content.startswith(">>author"):
+        
+        power = "#power by little-file"
+        github = "#github: https://github.com/little-file/"
+        version = "#II.v"
+
         await message.channel.send(power+" "+github+" "+version)
+        
 client.run("your token")

@@ -63,4 +63,4 @@ async def on_message(message):
 
         await message.channel.send(power+" "+github+" "+version)
         
-client.run("MTA0MTMzODgxOTIwMDQyMTg4OA.GZjO_w.WTBWUH07TSo-13fPpK2fr31UGRihhUBw2CwfN4")
+client.run("your token")
